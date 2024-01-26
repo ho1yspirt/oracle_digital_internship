@@ -47,7 +47,7 @@ class AppRunner implements IAppRunner {
         InheritedDependencies(dependencies: dependencies, child: const App()),
       ),
       onError: (Object error, StackTrace stackTrace) {
-        if (!kDebugMode) {
+        if (kDebugMode) {
           logger.e('Dependencies', error: error, stackTrace: stackTrace);
         }
         runApp(AppError(error: error));

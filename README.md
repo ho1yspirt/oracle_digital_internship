@@ -22,3 +22,6 @@ Oracle Digital Internship Project by Amir Asakeev (ho1yspirt)
 - retrofit
 - auto_route
 - etc
+
+# ABOUT DESTRUCTIVE LIBRARIES LIKE get_it, riverpod ETC
+- [link](https://plugfox.dev/not-recommended-packages/)

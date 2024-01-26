@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ class AppRunner implements IAppRunner {
     );
 
     /// display refresh rate
-    await FlutterDisplayMode.setHighRefreshRate();
+    if (Platform.isAndroid) await FlutterDisplayMode.setHighRefreshRate();
 
     /// Bloc observer
     Bloc.observer = AppBlocObserver();

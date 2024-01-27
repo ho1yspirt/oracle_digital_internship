@@ -59,7 +59,7 @@ class AuthDataSource implements IAuthDataSource {
   Future<Response> signupConfirm({
     required String nickname,
   }) async =>
-      await appRestClient.post(Endpoints.signup, {
-        "email": nickname,
+      await appRestClient.post(Endpoints.signupConfirm, {
+        "nickname": nickname,
       });
 }
